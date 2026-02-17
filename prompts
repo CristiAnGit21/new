@@ -1,0 +1,6 @@
+echo 'export HISTTIMEFORMAT="%F %T "' >> ~/.bashrc
+echo 'export HISTSIZE=10000' >> ~/.bashrc
+echo 'export HISTFILESIZE=20000' >> ~/.bashrc
+echo 'export PROMPT_COMMAND="history -a"' >> ~/.bashrc
+echo 'shopt -s histappend' >> ~/.bashrc
+source ~/.bashrc
