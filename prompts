@@ -4,3 +4,9 @@ echo 'export HISTFILESIZE=20000' >> ~/.bashrc
 echo 'export PROMPT_COMMAND="history -a"' >> ~/.bashrc
 echo 'shopt -s histappend' >> ~/.bashrc
 source ~/.bashrc
+
+history -s "VM_FINGERPRINT: $(sha256sum /etc/machine-id | cut -d ' ' -f1) | USER:
+$(whoami) | DATE: $(date '+%F %T')"
+
+history | tee Grupa_Nume_Prenume.txt
+sha256sum Grupa_Nume_Prenume.txt > Grupa_Nume_Prenume.hash
