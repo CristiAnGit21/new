@@ -10,3 +10,7 @@ $(whoami) | DATE: $(date '+%F %T')"
 
 history | tee Grupa_Nume_Prenume.txt
 sha256sum Grupa_Nume_Prenume.txt > Grupa_Nume_Prenume.hash
+
+
+$ sudo systemctl stop nessusd $ sudo /opt/nessus/sbin/nessuscli fix --reset $ sudo /opt/nessus/sbin/nessuscli fetch --register ACTIVATION-CODE-HERE
+$ sudo /opt/nessus/sbin/nessusd -R # Force a re-compilation of the plugins $ sudo systemctl stop nessusd
