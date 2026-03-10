@@ -19,3 +19,7 @@ $ sudo /opt/nessus/sbin/nessusd -R # Force a re-compilation of the plugins $ sud
 sudo -i
 export HISTTIMEFORMAT="%F %T "
 export PROMPT_COMMAND="history -a"
+
+journalctl --since "60 minutes ago" | grep -E "frunzacristian|damianbirca|mamaligaadrian|profesor"
+journalctl --since "60 minutes ago" | grep "su:"
+journalctl --since "60 minutes ago" | grep sudo
