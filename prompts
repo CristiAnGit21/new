@@ -23,3 +23,8 @@ export PROMPT_COMMAND="history -a"
 journalctl --since "60 minutes ago" | grep -E "frunzacristian|damianbirca|mamaligaadrian|profesor"
 journalctl --since "60 minutes ago" | grep "su:"
 journalctl --since "60 minutes ago" | grep sudo
+
+for f in /root/.bash_history /home/*/.bash_history; do                                                
+  [ -f "$f" ] && echo "===== $f =====" && cat "$f" && echo
+done > /home/cisco/Grupa_Nume_Prenume.txt
+sha256sum /home/cisco/Grupa_Nume_Prenume.txt > /home/cisco/Grupa_Nume_Prenume.hash
