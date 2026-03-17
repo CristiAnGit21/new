@@ -28,3 +28,19 @@ for f in /root/.bash_history /home/*/.bash_history; do
   [ -f "$f" ] && echo "===== $f =====" && cat "$f" && echo
 done > /home/cisco/Grupa_Nume_Prenume.txt
 sha256sum /home/cisco/Grupa_Nume_Prenume.txt > /home/cisco/Grupa_Nume_Prenume.hash
+
+takeown /f C:\laborator7\Profesor /r /d y
+
+icacls C:\laborator7\Profesor /grant Administratori:F /t
+
+takeown /f C:\laborator7\Public /r /d y
+icacls C:\laborator7\Public /grant Administratori:F /t
+
+takeown /f C:\laborator7\Studenti /r /d y
+icacls C:\laborator7\Studenti /grant Administratori:F /t
+
+takeown /f C:\laborator7\Partajat /r /d y
+icacls C:\laborator7\Partajat /grant Administratori:F /t
+
+takeown /f C:\laborator7\Auditat /r /d y
+icacls C:\laborator7\Auditat /grant Administratori:F /t
