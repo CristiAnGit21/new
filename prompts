@@ -44,3 +44,5 @@ icacls C:\laborator7\Partajat /grant Administratori:F /t
 
 takeown /f C:\laborator7\Auditat /r /d y
 icacls C:\laborator7\Auditat /grant Administratori:F /t
+
+zip Lucrare_9_Nume_Prenume.zip Mesaj_Nume_Prenume.txt Frunza_Cristian_GPG.pub Frunza_Cristian.crt Mesaj_Nume_Prenume.txt.asc Mesaj_Nume_Prenume.txt.bin
